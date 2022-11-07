@@ -1,0 +1,1 @@
+This folder is to contain any projects and exercises asked to complete during your studies here.
