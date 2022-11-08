@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Text Adventure Game 12_10_2022", "Text Adventure Game 12_10_2022\Text Adventure Game 12_10_2022.pyproj", "{DE0A93BC-7856-4E41-9153-733B770A1E09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE0A93BC-7856-4E41-9153-733B770A1E09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE0A93BC-7856-4E41-9153-733B770A1E09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {64A9221C-ACC2-454A-B26C-E73792AC92EA}
+	EndGlobalSection
+EndGlobal

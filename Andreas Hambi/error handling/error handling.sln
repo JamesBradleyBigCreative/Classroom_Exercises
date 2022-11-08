@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "error handling", "error handling\error handling.pyproj", "{ACD42CAD-5EBC-4247-9531-335A9C5AD3EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACD42CAD-5EBC-4247-9531-335A9C5AD3EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACD42CAD-5EBC-4247-9531-335A9C5AD3EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {37435BDB-D2C0-4B68-95C3-0D14CB95A217}
+	EndGlobalSection
+EndGlobal
