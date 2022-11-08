@@ -1,0 +1,5 @@
+f = open("TextFile1.txt", "w")
+f.write("Hello world")
+f.close()
+f = open("TextFile1.txt", "r")
+print (f.read())
