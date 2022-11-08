@@ -1,0 +1,61 @@
+import random as ran
+import tkinter 
+def Program():
+    global x
+    global y
+    global list1    
+    list1 = []
+    exit = False
+    LoopNum = 0
+    while exit == False:
+        while LoopNum == 1:
+            print("You can type 'done' at any point to finish inputing items or type 'Quit' to stop the program altogether!")
+            LoopNum += 1
+        Item = str(input("Enter item: "))
+        list1.append(Item)
+        if Item == "done":
+            list1.remove("done")
+        elif Item == "Done":
+            list1.remove("Done")
+        elif Item == "Quit" or Item == "quit":
+            quit()
+        LoopNum += 1
+        if Item == "Done" or Item == "done":
+            for x in list1:
+                print(x)
+            exit = True
+            y = ran.choice(list1)
+            y = x
+            print(f"{y} has been chosen")
+            print(x)
+           
+
+Program()
+
+def Repeat():
+    global inp
+    
+    Loop = True 
+    while Loop == True:
+        repeat = input("Do you want to repeat with or without chosen item  (with/without) \nyou can also add new items (add) and you can remove items by  type 'quit' to  Quit  : ")
+        if repeat == "with" or repeat == "With":
+           
+           print(ran.choice(list1))
+        elif repeat =="Without" or  repeat == "without":
+            y = ran.choice(list1)
+            print(f"{y} will be removed")
+            list1.remove(y)
+            print(list1)
+            y = ran.choice(list1)
+            print(f"Your result is {y}")
+        elif repeat =="add" or  repeat == "Add": 
+            Program()
+        elif repeat =="remove" or  repeat == "Remove":
+            print(list1)
+            inp1 = input("Enter which item you want to remove: ")
+            list1.remove(inp1)
+            print(list1)
+        elif repeat == "quit" or repeat == "Quit":
+            quit()
+Repeat()
+
