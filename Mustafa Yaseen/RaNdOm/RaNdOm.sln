@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "RaNdOm", "RaNdOm\RaNdOm.pyproj", "{BF580AFB-5D3D-4535-8B84-3A13836088F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF580AFB-5D3D-4535-8B84-3A13836088F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF580AFB-5D3D-4535-8B84-3A13836088F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C52CD8D9-D4D1-41A0-839E-B95035C96BC1}
+	EndGlobalSection
+EndGlobal
