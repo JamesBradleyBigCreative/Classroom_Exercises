@@ -1,8 +1,8 @@
-from random import randint
 from Characters import *
+from TextAdventure import *
 
-enemy_list = []
 
+"""
 def GenerateEnemyList():
     number_of_enemies = 0
     print("Amount of enemies cant exceed 50 and be 0 or below")
@@ -23,6 +23,7 @@ def GenerateEnemyList():
     else:
         print("Error Invalid Number of Enemies")
         return None
+"""
 
 #player_1 = Player()
 #enemy_1 = Hobgoblin()
@@ -37,8 +38,39 @@ def GenerateEnemyList():
 #print(vars(player_2))
 #print(vars(player_3))
 
-GenerateEnemyList()
-for j in range(len(enemy_list)):
+#GenerateEnemyList()
+#for j in range(len(enemy_list)):
     # Checks the length of the list and then prints the attributes of each
     # object in the list
-    print(vars(enemy_list[j]))
+    #print(vars(enemy_list[j]))
+
+def Main(): # Runs the start menu of the text adventure
+    global isplaying
+    isplaying = True
+    while isplaying == True:
+        print("Do you wish to play")
+        x = input("'S' to Start| 'Q' to Quit\n")
+        if x == "Q" or x == "q":
+            print("Quitting.........")
+            isplaying = False
+            return
+        elif x == "S" or x == "s":
+            print("\n At the start of you journey you take a "
+            "starter sword and 5 minor health potions")
+            avatar.equipment_inventory.update({"Starter Sword":0})
+            avatar.item_inventory.extend((
+                Potion,Potion,Potion,Potion,Potion))
+            print(vars(avatar))
+            Explore(isplaying)
+        else:
+            print("Error Wrong Input")
+
+    if avatar.health == 0 or avatar.health < 0:
+        print("YOU DIED")
+        return
+
+    elif isplaying == False:
+        print("Quitting.........")
+        return
+
+Main()
