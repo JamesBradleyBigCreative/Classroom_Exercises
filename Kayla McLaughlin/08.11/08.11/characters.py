@@ -4,19 +4,23 @@ from random import randint
 class Player():
     # Asks the user to name their character, and assigns random stats
     def __init__(self):
+
         self.name = input("Enter your name: ")
         self.level = 1
-        self.health = randint(60,120)
+        self.health = randint(40,80)
         self.attack = randint(80,100)
         self.defence = randint(80,100)
+        while len(self.name) == 0:
+            print("invalid input")
+            self.name = input("Please Enter your name:")
 
 class Goblin():
     def __init__(self):
         self.name = "Goblin"
-        self.level = 1
-        self.health = randint(40,65)
-        self.attack = randint(30,50)
-        self.defence = randint(30,50)
+        self.level = randint(1,3)
+        self.health = randint(10,45)
+        self.attack = randint(20,55)
+        self.defence = randint(20,55)
 
 class Hobgoblin(Goblin): 
     #inheritance - takes (inherits) attributes from another class. 
@@ -25,4 +29,7 @@ class Hobgoblin(Goblin):
        Goblin.__init__(self)
        self.name = "Hobgoblin"
        self.health = self.health * 1.25
+
+
+
 
