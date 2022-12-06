@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="0.053" timestamp="2022-12-06T15:14:28.743073" hostname="TS01-15"><testcase classname="module1" name="test_answer" file="module1.py" line="0" time="0.001"><failure message="NameError: name 'func' is not defined">def test_answer():
+&gt;       assert func(3) == 5
+E       NameError: name 'func' is not defined
+
+module1.py:2: NameError</failure><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase></testsuite></testsuites>

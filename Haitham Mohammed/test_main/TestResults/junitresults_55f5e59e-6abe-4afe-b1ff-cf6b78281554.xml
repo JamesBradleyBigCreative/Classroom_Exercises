@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="0.047" timestamp="2022-12-06T15:37:53.156468" hostname="TS01-15"><testcase classname="test_main" name="test_can_add_item_to_cart" file="test_main.py" line="2" time="0.001"><failure message="assert 0 == 1&#10; +  where 0 = &lt;bound method ShoppingCart.size of &lt;module1.ShoppingCart object at 0x0000027C55FC7BB0&gt;&gt;()&#10; +    where &lt;bound method ShoppingCart.size of &lt;module1.ShoppingCart object at 0x0000027C55FC7BB0&gt;&gt; = &lt;module1.ShoppingCart object at 0x0000027C55FC7BB0&gt;.size">def test_can_add_item_to_cart():
+        cart = ShoppingCart()
+        cart.add("apple")
+&gt;       assert cart.size() == 1
+E       assert 0 == 1
+E        +  where 0 = &lt;bound method ShoppingCart.size of &lt;module1.ShoppingCart object at 0x0000027C55FC7BB0&gt;&gt;()
+E        +    where &lt;bound method ShoppingCart.size of &lt;module1.ShoppingCart object at 0x0000027C55FC7BB0&gt;&gt; = &lt;module1.ShoppingCart object at 0x0000027C55FC7BB0&gt;.size
+
+test_main.py:6: AssertionError</failure><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase></testsuite></testsuites>

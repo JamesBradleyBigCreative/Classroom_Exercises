@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="0.048" timestamp="2022-12-06T15:51:55.254386" hostname="TS01-15"><testcase classname="test_main" name="test_can_add_item_to_cart" file="test_main.py" line="1" time="0.001"><failure message="TypeError: '_SpecialGenericAlias' object does not support item assignment">def test_can_add_item_to_cart():
+&gt;       cart = ShoppingCart()
+
+test_main.py:3: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;module1.ShoppingCart object at 0x00000224A8C641F0&gt;
+
+    def __init__ (self) -&gt; None:
+&gt;       self.items = List[str] = []
+E       TypeError: '_SpecialGenericAlias' object does not support item assignment
+
+module1.py:6: TypeError</failure><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase></testsuite></testsuites>

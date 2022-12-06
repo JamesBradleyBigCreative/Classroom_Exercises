@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="0.048" timestamp="2022-12-06T15:54:04.541205" hostname="TS01-15"><testcase classname="test_main" name="test_can_add_item_to_cart" file="test_main.py" line="1" time="0.000"><failure message="AttributeError: 'ShoppingCart' object has no attribute 'item'">def test_can_add_item_to_cart():
+        cart = ShoppingCart()
+        cart.add("apple")
+&gt;       assert cart.size() == 1
+
+test_main.py:5: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;module1.ShoppingCart object at 0x000001667B3E62B0&gt;
+
+    def size(self) -&gt; int:
+&gt;       return len(self.item)
+E       AttributeError: 'ShoppingCart' object has no attribute 'item'
+
+module1.py:11: AttributeError</failure><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase></testsuite></testsuites>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="3" time="0.054" timestamp="2022-12-06T16:18:38.702904" hostname="TS01-15"><testcase classname="test_main" name="test_can_add_item_to_cart" file="test_main.py" line="2" time="0.001"><failure message="RecursionError: maximum recursion depth exceeded">def test_can_add_item_to_cart():
+        cart = ShoppingCart(5)
+        cart.add("apple")
+&gt;       assert cart.size() == 1
+
+test_main.py:6: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+module1.py:12: in size
+    if self.size() == max_size:
+module1.py:12: in size
+    if self.size() == max_size:
+E   RecursionError: maximum recursion depth exceeded
+!!! Recursion detected (same locals &amp; position)</failure><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="test_main" name="test_max_size" file="test_main.py" line="12" time="0.000"><failure message="Failed: DID NOT RAISE &lt;class 'OverflowError'&gt;">def test_max_size():
+       cart = ShoppingCart(5)
+       with pytest.raises (OverflowError):
+        for i in range(6):
+&gt;           cart.add("apple")
+E           Failed: DID NOT RAISE &lt;class 'OverflowError'&gt;
+
+test_main.py:17: Failed</failure><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="test_main" name="test_when_item_added_then_cart_contains_item" file="test_main.py" line="7" time="0.000"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase></testsuite></testsuites>

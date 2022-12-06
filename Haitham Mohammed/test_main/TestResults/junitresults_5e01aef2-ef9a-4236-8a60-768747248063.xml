@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="3" time="0.052" timestamp="2022-12-06T16:27:29.180314" hostname="TS01-15"><testcase classname="test_main" name="test_can_add_item_to_cart" file="test_main.py" line="2" time="0.000"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="test_main" name="test_max_size" file="test_main.py" line="12" time="0.000"><failure message="OverflowError: Cannot add more items">def test_max_size():
+       cart = ShoppingCart(5)
+       for i in range(5):
+&gt;           cart.add("apple")
+
+test_main.py:16: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;module1.ShoppingCart object at 0x000001ED9EAD7640&gt;, item = 'apple'
+
+    def add (self, item: str):
+         if self.size() == self.max_size -1:
+&gt;            raise OverflowError("Cannot add more items")
+E            OverflowError: Cannot add more items
+
+module1.py:10: OverflowError</failure><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="test_main" name="test_when_item_added_then_cart_contains_item" file="test_main.py" line="7" time="0.000"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase></testsuite></testsuites>
