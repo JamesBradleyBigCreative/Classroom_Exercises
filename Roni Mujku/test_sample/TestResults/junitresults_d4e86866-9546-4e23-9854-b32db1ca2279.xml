@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="2" time="0.049" timestamp="2022-12-06T15:25:38.640939" hostname="TS01-05"><testcase classname="test_sample" name="test_A" file="test_sample.py" line="5" time="0.000"><failure message="TypeError: can only concatenate str (not &quot;int&quot;) to str">def test_A():
+        string = "AAAAAAA"
+&gt;       string += 1
+E       TypeError: can only concatenate str (not "int") to str
+
+test_sample.py:8: TypeError</failure><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="test_sample" name="test_answer" file="test_sample.py" line="2" time="0.000"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase></testsuite></testsuites>

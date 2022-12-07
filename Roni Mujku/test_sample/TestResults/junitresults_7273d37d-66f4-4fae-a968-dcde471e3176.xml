@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="3" time="0.048" timestamp="2022-12-06T15:50:53.969593" hostname="TS01-05"><testcase classname="test_sample" name="test_A" file="test_sample.py" line="18" time="0.000"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="test_sample" name="test_Adding" file="test_sample.py" line="22" time="0.000"><failure message="NameError: name 'pytest' is not defined">def test_Adding():
+        Temp = A()
+&gt;       with pytest.raises(OverflowError):
+E       NameError: name 'pytest' is not defined
+
+test_sample.py:25: NameError</failure><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="test_sample" name="test_answer" file="test_sample.py" line="15" time="0.000"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase></testsuite></testsuites>

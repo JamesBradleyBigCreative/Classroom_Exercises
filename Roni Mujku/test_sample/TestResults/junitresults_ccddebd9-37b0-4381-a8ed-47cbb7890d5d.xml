@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="0.048" timestamp="2022-12-06T15:06:07.947893" hostname="TS01-05"><testcase classname="test_sample" name="test_answer" file="test_sample.py" line="2" time="0.000"><failure message="assert 790 == 5&#10; +  where 790 = func(789)">def test_answer():
+&gt;       assert func(789) == 5
+E       assert 790 == 5
+E        +  where 790 = func(789)
+
+test_sample.py:4: AssertionError</failure><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase></testsuite></testsuites>
