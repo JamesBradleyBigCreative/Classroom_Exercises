@@ -41,12 +41,132 @@ df_csv=pd.read_csv('pokemon_data.csv')
 #print(df_csv.sort_values(['Type 1','Speed'] , ascending = [True,False]))
 
 #creating a Totals column
-df_csv['Total'] = df_csv['HP'] + df_csv['Attack'] + df_csv['Sp. Atk'] + df_csv['Sp. Def']+ df_csv['Speed'] +  df_csv['Defense']
+#df_csv['Total'] = df_csv['HP'] + df_csv['Attack'] + df_csv['Sp. Atk'] + df_csv['Sp. Def']+ df_csv['Speed'] +  df_csv['Defense']
 
-#removes a column from dataframe
-df_amended = df_csv = df_csv.drop(columns = ['Total'])
-print(df_csv)
-# creates and converts dataframe into different files
-df_amended.to_csv('modified_data.csv')
-df_amended.to_excel('modified_data.xlsx')
-df_amended.to_csv('modified_data.txt', sep = '\t')
+##removes a column from dataframe
+#df_amended = df_csv = df_csv.drop(columns = ['Total'])
+#print(df_csv)
+## creates and converts dataframe into different files
+#df_amended.to_csv('modified_data.csv')
+#df_amended.to_excel('modified_data.xlsx')
+#df_amended.to_csv('modified_data.txt', sep = '\t')
+
+#Creates DataFrame
+mydataset = {
+  'People': ["Bob", "Jeff", "Jon"],
+  'Age': [99, 69, 21]
+}
+
+#df = pd.DataFrame(mydataset)
+#print(df)
+#Create series within python
+age = [99, 69, 21]
+#df= pd.Series(age)
+#print(df)
+
+#Return specific value of series
+#print(age[0])
+#Creates labels e.g changes index to whatever you want
+df = pd.Series(age, index = ["Bob", "Jeff", "Jon"])
+#return label's value
+
+#print(df["Jon"])
+
+#Create a series from a dict
+
+salary = {"month1": 4200, "month2": 3800, "month3": 3900}
+df = pd.Series(salary)
+#print(df)
+
+#Convert specific indecies of a dict to a series
+df =pd.Series(salary, index = ["month1","month3"])
+#print(df)
+
+#Create Dataframe
+data = {
+  "salary": [4200, 3800, 3900],
+  "hours": [5000, 4000, 4005]
+  
+
+}
+
+df = pd.DataFrame(data)
+
+print(df)
+
+#returns specified row
+#print(df.loc[[0,1]])
+
+#name indices of rows
+df = pd.DataFrame(data, index = ["me","myself","i"])
+#print(df)
+
+#locate named indicies
+print(df.loc["me"])
+
+#Load a csv file into a dataframe(compressed)
+df = pd.read_csv("pokemon_data.csv")
+#print(df)
+#print out dataframe fully
+#print(df.to_string())
+
+#returns maximum amount of rows
+print(pd.options.display.max_rows)
+
+#increase maximum amount of rows
+pd.options.display.max_rows = 9999
+dz = pd.read_csv("pokemon_data.csv")
+
+#load json data into dataframe
+
+dj = pd.read_json("data.json")
+#print(df.to_string)
+
+#create dataframe from dicts
+
+
+data = {
+  "Duration":{
+    "0":60,
+    "1":60,
+    "2":60,
+    "3":45,
+    "4":45,
+    "5":60
+  },
+  "Pulse":{
+    "0":110,
+    "1":117,
+    "2":103,
+    "3":109,
+    "4":117,
+    "5":102
+  },
+  "Maxpulse":{
+    "0":130,
+    "1":145,
+    "2":135,
+    "3":175,
+    "4":148,
+    "5":127
+  },
+  "Calories":{
+    "0":"NaN",
+    "1":479,
+    "2":340,
+    "3":282,
+    "4":406,
+    "5":"NaN"
+  }
+}
+
+df = pd.DataFrame(data)
+
+#print(df) 
+# displays information about the dataframe
+#print(df.info)
+
+#remove rows with empty cells (loading a new csv file)
+df = pd.read_csv("data.csv")
+new_df = df.dropna()
+print(new_df.to_string())
