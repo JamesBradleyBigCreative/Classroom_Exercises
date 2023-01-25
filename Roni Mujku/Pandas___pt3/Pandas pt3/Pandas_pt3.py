@@ -11,7 +11,11 @@ def Task1_Pt1():
     # Counts the number of values in each type in the data base
     #total_types = pd.DataFrame(columns=['Type','Total'])
     total_types = df_csv['Type 1'].value_counts().rename_axis('Type').reset_index(name='Total')
-    print(total_types)
+    return total_types
+
+def total_type2():
+    df_csv = pd.read_csv("pokemon_data.csv")
+    total_types = df_csv['Type 2'].value_counts().rename_axis('Type').reset_index(name='Total')
     return total_types
 
 # Returns a dataframe of the total attack from each generation
@@ -38,17 +42,24 @@ def Top_20_Strongest():
     return top_20
 
 
-total_types = Task1_Pt1()
+#total_types = Task1_Pt1()
 #attack_by_generation = Task1_Pt2()
 #average_stats = Task2()
 #top_20 = Top_20_Strongest()
+total_types2 = total_type2()
 
-total_types.to_csv('total_types_database.csv')
+#total_types.to_csv('total_types_database.csv')
+total_types2.to_csv('total_types2_database.csv')
 #attack_by_generation.to_csv('attack_by_generation_database.csv')
 #average_stats.to_csv('average_stats_database.csv')
 #top_20.to_csv('top_20_database.csv')
 
 total_types = pd.read_csv('total_types_database.csv')
-print(total_types)
-total_types.plot(kind='scatter',x='Type',y='Total',color='red')
+total_types = total_types.drop(["Unnamed: 0"], axis=1)
+
+total_types2 = pd.read_csv('total_types2_database.csv')
+total_types2 = total_types2.drop(["Unnamed: 0"], axis=1)
+
+ax = total_types2.plot(kind='scatter',x='Type',y='Total',color='Blue',rot=90)
+total_types2.plot(ax = ax,kind='scatter',x='Type',y='Total',color='Red',rot=90)
 plt.show()
