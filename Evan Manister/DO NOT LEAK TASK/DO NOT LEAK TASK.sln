@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "DO NOT LEAK TASK", "DO NOT LEAK TASK\DO NOT LEAK TASK.pyproj", "{3DAE3516-93C0-47BD-B71A-B8A3A7C9EF85}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3DAE3516-93C0-47BD-B71A-B8A3A7C9EF85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DAE3516-93C0-47BD-B71A-B8A3A7C9EF85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {72F3F324-9F8B-48E9-9059-C3A7AC68F5F3}
+	EndGlobalSection
+EndGlobal
