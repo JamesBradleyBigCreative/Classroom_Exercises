@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Ceaser_Cipher", "Ceaser_Cipher\Ceaser_Cipher.pyproj", "{8D9E20D3-A16A-4C95-834F-1E7A3B1FD24B}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Cryptography", "..\Cryptography\Cryptography\Cryptography.pyproj", "{77C6EF8E-F7A5-4E7B-AA17-CE01547D0C16}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D9E20D3-A16A-4C95-834F-1E7A3B1FD24B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D9E20D3-A16A-4C95-834F-1E7A3B1FD24B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77C6EF8E-F7A5-4E7B-AA17-CE01547D0C16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77C6EF8E-F7A5-4E7B-AA17-CE01547D0C16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D3A5B459-EC1D-40B4-A655-3F32A02115D9}
+	EndGlobalSection
+EndGlobal
