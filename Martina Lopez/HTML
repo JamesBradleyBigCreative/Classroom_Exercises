@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Website Title</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="book_a_space.html">Book a Space</a></li>
+                <li><a href="pre_ordering.html">Pre-Ordering</a></li>
+                <li><a href="baking_lessons.html">Booking Baking Lessons Online</a></li>
+                <li><a href="hampers.html">Hampers</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="social_media.html"> Social Media</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- main content for the landing page -->
+        <h1>Bean & Brew</h1>
+        <h3> COFFEE</h3>
+        <p>Here, you'll find everything related to booking, ordering, baking lessons, hampers, and more ;).</p>
+        <!-- Add more content -->
+    </main>
+</body>
+</html>
